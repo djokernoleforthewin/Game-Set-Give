@@ -515,20 +515,12 @@ window.addEventListener('load',()=>{
   L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
     attribution:'© OpenStreetMap © CARTO',subdomains:'abcd'
   }).addTo(map);
-
-  const locs=[
-    {lat:30.2849,lng:-97.7341,name:'Austin Tennis Center',type:'club',info:'Drop box at main entrance — open 7am to 9pm'},
-    {lat:30.3074,lng:-97.7559,name:'Westwood Tennis Club',type:'club',info:'Drop box near pro shop — members and public welcome'},
-    {lat:30.2461,lng:-97.8012,name:'Circle C Ranch Courts',type:'public',info:'Drop box at court 4 — accessible 24 hours'},
-    {lat:30.3588,lng:-97.7218,name:'Milwood Park Courts',type:'public',info:'Drop box at parking lot entrance'},
-    {lat:30.2200,lng:-97.7650,name:'South Austin Racquet Club',type:'club',info:'2 drop boxes — walk-ins accepted daily'},
-    {lat:30.4012,lng:-97.6980,name:'Pflugerville Sports Complex',type:'sports',info:'Drop box near tennis pavilion'},
-    {lat:30.2634,lng:-97.7235,name:'Govalle Park Courts',type:'public',info:'Drop box at main gate'},
-    {lat:30.3267,lng:-97.7891,name:'Northwest Recreation Center',type:'sports',info:'Drop box in lobby — Mon to Sat 6am to 10pm'},
-    {lat:30.2450,lng:-97.7200,name:'Town Lake Animal Center',type:'shelter',info:'Partner shelter — direct donations accepted'},
-    {lat:30.3789,lng:-97.7654,name:'Austin Humane Society',type:'shelter',info:'Primary partner — balls distributed daily'},
-    {lat:30.2012,lng:-97.7980,name:'South Austin Animal Rescue',type:'shelter',info:'Drop directly or schedule weekly pickup'},
-    {lat:30.2780,lng:-97.8230,name:'Barton Creek Tennis Club',type:'club',info:'Drop box at rear courts entrance'},
+  
+const locs=[
+    {lat:29.7370,lng:-95.4977,name:'Lakeside Country Club',type:'club',info:'Drop box at tennis facility entrance — members and guests welcome'},
+    {lat:29.7573,lng:-95.4530,name:'The Houstonian Club and Spa',type:'club',info:'Drop box near tennis courts — available during club hours'},
+    {lat:29.7638,lng:-95.4347,name:'Memorial Park Tennis Center',type:'public',info:'Drop box at main courts entrance — accessible daily'},
+    {lat:29.7523,lng:-95.4198,name:'Lee LeClerc Tennis Center',type:'public',info:'Drop box at facility reception — open 7am to 9pm'},
   ];
 
   const colors={club:'#b8d030',public:'#e0dcd0',sports:'#7a9a18',shelter:'#907060'};
