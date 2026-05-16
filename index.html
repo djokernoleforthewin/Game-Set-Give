@@ -217,7 +217,7 @@ footer{background:var(--ink2);border-top:1px solid var(--rule);padding:80px 60px
 
 <div class="stat-bar">
   <div class="stat-item reveal">
-    <div class="stat-num"><span class="acc" id="liveCount">24,718</span></div>
+    <div class="stat-num"><span class="acc" id="liveCount">0</span></div>
     <div class="stat-desc">Balls collected and donated</div>
   </div>
   <div class="stat-item reveal" style="transition-delay:0.1s">
@@ -471,7 +471,7 @@ document.querySelectorAll('a,button').forEach(el=>{
 })();
 
 // COUNTER
-let count=parseInt(localStorage.getItem('gsg_count')||'0')||24718;
+let count = parseInt(localStorage.getItem('gsg_count') || '0');
 const counterEl=document.getElementById('counterNum');
 const liveEl=document.getElementById('liveCount');
 function fmt(n){return n.toLocaleString();}
@@ -516,13 +516,36 @@ window.addEventListener('load',()=>{
     attribution:'© OpenStreetMap © CARTO',subdomains:'abcd'
   }).addTo(map);
   
-const locs=[
-    {lat:29.7370,lng:-95.4977,name:'Lakeside Country Club',type:'club',info:'Drop box at tennis facility entrance — members and guests welcome'},
-    {lat:29.7573,lng:-95.4530,name:'The Houstonian Club and Spa',type:'club',info:'Drop box near tennis courts — available during club hours'},
-    {lat:29.7638,lng:-95.4347,name:'Memorial Park Tennis Center',type:'public',info:'Drop box at main courts entrance — accessible daily'},
-    {lat:29.7523,lng:-95.4198,name:'Lee LeClerc Tennis Center',type:'public',info:'Drop box at facility reception — open 7am to 9pm'},
-  ];
-
+const locs = [
+  {
+    lat: 29.7370,
+    lng: -95.4977,
+    name: 'Lakeside Country Club',
+    type: 'club',
+    info: 'Drop box at tennis facility entrance — members and guests welcome'
+  },
+  {
+    lat: 29.7573,
+    lng: -95.4530,
+    name: 'The Houstonian Club & Spa',
+    type: 'club',
+    info: 'Drop box near tennis courts — available during club hours'
+  },
+  {
+    lat: 29.7638,
+    lng: -95.4347,
+    name: 'Memorial Park Tennis Center',
+    type: 'public',
+    info: 'Drop box at main courts entrance — accessible daily'
+  },
+  {
+    lat: 29.7523,
+    lng: -95.4198,
+    name: 'Lee LeClear Tennis Center',
+    type: 'public',
+    info: 'Drop box at facility reception — open 7am to 9pm'
+  }
+];
   const colors={club:'#b8d030',public:'#e0dcd0',sports:'#7a9a18',shelter:'#907060'};
   const labels={club:'Tennis Club',public:'Public Court',sports:'Sports Center',shelter:'Partner Shelter'};
 
